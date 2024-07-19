@@ -1,4 +1,4 @@
-package sadama.oauth.game.server;
+package sadama.oauth.game.server.common;
 
 public class Constants {
     public class Configuration {
