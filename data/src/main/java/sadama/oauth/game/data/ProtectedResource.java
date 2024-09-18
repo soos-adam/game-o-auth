@@ -1,4 +1,4 @@
-package sadama.oauth.game.server.data;
+package sadama.oauth.game.data;
 
 import java.util.List;
 
