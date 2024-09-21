@@ -27,6 +27,11 @@
             <artifactId>game-o-auth-impl-data</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>sadama.oauth.game</groupId>
+            <artifactId>game-o-auth-impl-signup-login</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
     </dependencies>
 
