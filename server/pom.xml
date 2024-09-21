@@ -16,4 +16,18 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>sadama.oauth.game</groupId>
+            <artifactId>game-o-auth-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>sadama.oauth.game</groupId>
+            <artifactId>game-o-auth-impl-data</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
+
 </project>
