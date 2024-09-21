@@ -12,7 +12,6 @@
         <module>api</module>
         <module>impl</module>
         <module>common</module>
-        <module>data</module>
         <module>server</module>
     </modules>
     <properties>

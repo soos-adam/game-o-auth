@@ -9,7 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>impl</artifactId>
+    <artifactId>game-o-auth-impl</artifactId>
+    <modules>
+        <module>data</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>sadama.oauth.game</groupId>
-            <artifactId>api</artifactId>
+            <artifactId>game-o-auth-api</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
