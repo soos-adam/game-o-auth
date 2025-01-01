@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>sadama.oauth.game</groupId>
-            <artifactId>game-o-auth-impl-signup-login</artifactId>
+            <artifactId>game-o-auth-impl-landingpage</artifactId>
             <version>${project.version}</version>
         </dependency>
 
