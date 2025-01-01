@@ -1,20 +1,81 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(155, 245, 255);
+    background: rgb(214, 251, 255);
+    color: rgb(10, 2, 65);
 }
 
 .logo {
     background: rgb(15, 15, 158);
-    height: 25%;
-    width: 80%;
-    padding: 5px;
+    background: linear-gradient(rgb(15,15,158) 75%, rgb(214,251,255));
+    height: 40%;
+    padding: 25px;
+    margin: 0;
     padding-left: 10%;
     padding-right: 10%;
-    margin: 0;
+    width: 80%;
 }
 
 .logo img {
     width: 100%;
     height: 100%;
+}
+
+main {
+    padding: 40px;
+    background: linear-gradient( rgb(214,251,255) 75%, white);
+    font-size: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+}
+
+footer {
+    font-size: 1.5rem;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    font-style: italic;
+    color: rgb(130, 130, 130);
+}
+
+.center {
+    text-align: center;
+}
+
+.rounded-oneliner {
+    text-align: center;
+    display: block;
+    width: 74%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-radius: 25px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0);
+    transition: background 300ms linear, border 300ms linear;
+    font-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.rounded-oneliner:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.slight-yellow-border {
+    border-color: rgb(252, 255, 188);
+}
+
+.slight-yellow-border:hover {
+    border-color: rgb(245, 255, 55);
 }
