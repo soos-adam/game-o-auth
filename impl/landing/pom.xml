@@ -16,4 +16,44 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <phase>generate-resources</phase> <!-- Run during generate-resources phase -->
+                        <configuration>
+                            <executable>java</executable>
+                            <arguments>
+                                <argument>-cp</argument>
+                                <argument>${maven.multiModuleProjectDirectory}/tools/html-templater/target/html-templater-${project.version}.jar</argument> <!-- The path to your JAR -->
+                                <argument>sadama.oauth.goa.html.templater.Templater</argument> <!-- The path to your JAR -->
+                                <argument>${project.basedir}/src/main/resources</argument>
+                                <argument>${maven.multiModuleProjectDirectory}/tools/html-templater/templates</argument>
+                                <argument>${project.basedir}/target/templated-resources</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>**/*.html</exclude> <!-- Exclude all .html files -->
+                </excludes>
+            </resource>
+            <resource>
+                <directory>${project.basedir}/target/templated-resources</directory>
+            </resource>
+        </resources>
+    </build>
+
 </project>
